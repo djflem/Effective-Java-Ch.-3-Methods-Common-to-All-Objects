@@ -12,7 +12,7 @@ public class CounterPoint extends Point {
         counter.incrementAndGet();
     }
 
-    public static int numberCreated() {
+    public static int getNumberCreated() {
         return counter.get();
     }
 }

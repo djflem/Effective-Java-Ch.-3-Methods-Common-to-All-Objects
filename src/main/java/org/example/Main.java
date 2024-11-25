@@ -24,11 +24,7 @@ public class Main {
         list.add(cis);
         System.out.println(list.contains(s)); // false, but equals has been defiled and now has unpredictable behavior. (refactor: false)
 
-        ColorPoint p1 = new ColorPoint(1, 2, Color.RED);
-        Point p2 = new Point(1, 2);
-        ColorPoint p3 = new ColorPoint(1, 2, Color.BLUE);
-        System.out.println(p1.equals(p2)); // true
-        System.out.println(p2.equals(p3)); // false, clear violation of symmetry (refactor: true, but at the cost of transitivity!)
-        System.out.println(p1.equals(p3)); // false, signaling clear violation of transitivity
+
+
     }
 }
