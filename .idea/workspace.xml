@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ed39096-6b77-40da-aa64-cf89a5492e7a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/equalsgeneralcontract/PhoneNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/equalsgeneralcontract/PointTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/overridehashcodeandequals/OverrideHashCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/equalsgeneralcontract/PhoneNumberTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/equalsgeneralcontract/ColorPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/equalsgeneralcontract/ColorPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/equalsgeneralcontract/CounterPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/equalsgeneralcontract/CounterPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/equalsgeneralcontract/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/equalsgeneralcontract/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/equalsgeneralcontract/PhoneNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/equalsgeneralcontract/PhoneNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/equalsgeneralcontract/PointTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/equalsgeneralcontract/PointTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +42,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.PhoneNumberTest.executor": "Run",
     "JUnit.PointTest.executor": "Run",
     "JUnit.PointTest.testOnUnitCircle.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -63,7 +61,22 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.PointTest">
+  <component name="RunManager" selected="JUnit.PhoneNumberTest">
+    <configuration name="PhoneNumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maven" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="equalsgeneralcontract.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="equalsgeneralcontract" />
+      <option name="MAIN_CLASS_NAME" value="equalsgeneralcontract.PhoneNumberTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PointTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="maven" />
       <extension name="coverage">
@@ -97,6 +110,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PhoneNumberTest" />
         <item itemvalue="JUnit.PointTest" />
         <item itemvalue="JUnit.PointTest.testOnUnitCircle" />
       </list>
@@ -123,6 +137,7 @@
       <workItem from="1732458438849" duration="527000" />
       <workItem from="1732459207464" duration="501000" />
       <workItem from="1732534978872" duration="13472000" />
+      <workItem from="1732624221405" duration="4648000" />
     </task>
     <servers />
   </component>

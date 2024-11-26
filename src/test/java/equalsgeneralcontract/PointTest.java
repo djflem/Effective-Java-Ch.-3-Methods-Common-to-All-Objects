@@ -1,10 +1,9 @@
 package equalsgeneralcontract;
 
 import org.junit.Test;
-
+import static org.junit.Assert.*;
 import java.awt.*;
 import java.util.Set;
-import static org.junit.Assert.*;
 
 public class PointTest {
     @Test
