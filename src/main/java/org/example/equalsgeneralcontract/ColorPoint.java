@@ -1,4 +1,4 @@
-package equalsgeneralcontract;
+package org.example.equalsgeneralcontract;
 
 import java.awt.*;
 import java.util.Objects;

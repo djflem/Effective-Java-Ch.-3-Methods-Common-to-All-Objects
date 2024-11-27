@@ -1,11 +1,8 @@
 package org.example;
 
-import equalsgeneralcontract.CaseInsensitiveString;
-import equalsgeneralcontract.ColorPoint;
-import equalsgeneralcontract.PhoneNumber;
-import equalsgeneralcontract.Point;
+import org.example.equalsgeneralcontract.CaseInsensitiveString;
+import org.example.equalsgeneralcontract.PhoneNumber;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,11 +30,20 @@ public class Main {
 
         PhoneNumber phoneNumber1 = new PhoneNumber(425, 788, 8845);
         PhoneNumber phoneNumber2 = new PhoneNumber(206, 788, 8845);
-        System.out.println(phoneNumber1.equals(phoneNumber2));
-        System.out.println(phoneNumber1.hashCode());
-        System.out.println(phoneNumber1.toString());
+        System.out.println("Does phone number 1 equal phone number 2?: " + phoneNumber1.equals(phoneNumber2));
+        System.out.println("Phone number 1 hash code: " + phoneNumber1.hashCode());
+        System.out.println("Phone number 1 toString: " + phoneNumber1.toString());
 
+        //OVERRIDING CLONE
+        System.out.println();
+        System.out.println("OVERRIDING CLONE");
+        System.out.println();
+        //
 
+        PhoneNumber phoneNumber3 = phoneNumber1.clone();
+        System.out.println("Is the clone of phone number 1 equal to original phone number 1?: " + phoneNumber3.equals(phoneNumber1));
+        System.out.println("Phone number 3 hash code (clone of phone number 1): " + phoneNumber3.hashCode());
+        System.out.println("Phone number 3 toString: " + phoneNumber3.toString());
 
     }
 }

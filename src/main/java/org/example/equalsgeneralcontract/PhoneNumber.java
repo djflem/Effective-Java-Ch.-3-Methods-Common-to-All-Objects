@@ -1,4 +1,4 @@
-package equalsgeneralcontract;
+package org.example.equalsgeneralcontract;
 
 // Class with typical equals method
 
@@ -9,7 +9,7 @@ package equalsgeneralcontract;
 // 4. For each "significant" field in the class, check if that field of the argument matches the corresponding field of this object.
 // Lastly, rewriting equals methods and running tests can be mundane. It is okay to use programs to generate this code sometimes.
 // Google's AutoValue framework, IDE's, and ChatGPT, can all do this.
-public class PhoneNumber {
+public class PhoneNumber implements Cloneable {
     private final short areaCode, prefix, lineNum;
 
     public PhoneNumber(int areaCode, int prefix, int lineNum) {
@@ -45,6 +45,17 @@ public class PhoneNumber {
         PhoneNumber pn = (PhoneNumber) o; // #3
         return pn.lineNum == lineNum && pn.prefix == prefix && pn.areaCode == areaCode; // #4
         // Primitives can use ==, float use Float.compare, double use Double.compare, array check each element, null use Objects.equals
+    }
+
+    // Clone method for class with no references to mutable state
+    // Remember to add implements Cloneable!
+    @Override
+    public PhoneNumber clone() {
+        try {
+            return (PhoneNumber) super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError(); // Can't happen
+        }
     }
 
     /**

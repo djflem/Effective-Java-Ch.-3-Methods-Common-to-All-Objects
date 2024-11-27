@@ -1,4 +1,4 @@
-package overridehashcodeandequals;
+package org.example.overridehashcodeandequals;
 
 import java.util.Objects;
 

@@ -5,10 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ed39096-6b77-40da-aa64-cf89a5492e7a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/alwaysoverridetostring/OverrideToString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/overridingclone/Entry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/overridingclone/HashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/overridingclone/Stack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/equalsgeneralcontract/PhoneNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/equalsgeneralcontract/PhoneNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alwaysoverridetostring/OverrideToString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/alwaysoverridetostring/OverrideToString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/equalsgeneralcontract/CaseInsensitiveString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/equalsgeneralcontract/CaseInsensitiveString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/equalsgeneralcontract/ColorPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/equalsgeneralcontract/ColorPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/equalsgeneralcontract/CounterPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/equalsgeneralcontract/CounterPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/equalsgeneralcontract/PhoneNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/equalsgeneralcontract/PhoneNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/equalsgeneralcontract/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/equalsgeneralcontract/Point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/overridehashcodeandequals/OverrideHashCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/overridehashcodeandequals/OverrideHashCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/equalsgeneralcontract/PhoneNumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/equalsgeneralcontract/PhoneNumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/equalsgeneralcontract/PointTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/equalsgeneralcontract/PointTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +161,9 @@
       <workItem from="1732459207464" duration="501000" />
       <workItem from="1732534978872" duration="13472000" />
       <workItem from="1732624221405" duration="4708000" />
-      <workItem from="1732684098695" duration="2702000" />
+      <workItem from="1732684098695" duration="2916000" />
+      <workItem from="1732700242902" duration="1010000" />
+      <workItem from="1732712091096" duration="3793000" />
     </task>
     <servers />
   </component>

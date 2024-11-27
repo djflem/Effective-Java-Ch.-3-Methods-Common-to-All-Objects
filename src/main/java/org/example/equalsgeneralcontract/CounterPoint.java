@@ -1,4 +1,4 @@
-package equalsgeneralcontract;
+package org.example.equalsgeneralcontract;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

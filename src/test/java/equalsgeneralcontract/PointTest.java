@@ -1,30 +1,32 @@
 package equalsgeneralcontract;
 
+import org.example.equalsgeneralcontract.ColorPoint;
+import org.example.equalsgeneralcontract.CounterPoint;
+import org.example.equalsgeneralcontract.Point;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import java.awt.*;
-import java.util.Set;
 
 public class PointTest {
     @Test
     public void testOnUnitCircle() {
-        Point po1 = new Point(1, 0); // On the unit circle
-        Point po2 = new Point(0, 1); // On the unit circle
-        Point po3 = new Point(-1, 0); // On the unit circle
-        Point po4 = new Point(0, -1); // On the unit circle
-        Point po5 = new Point(2, 0); // Not on the unit circle
-        assertTrue(Point.onUnitCircle(po1));
-        assertTrue(Point.onUnitCircle(po2));
-        assertTrue(Point.onUnitCircle(po3));
-        assertTrue(Point.onUnitCircle(po4));
-        assertFalse(Point.onUnitCircle(po5));
+        org.example.equalsgeneralcontract.Point po1 = new org.example.equalsgeneralcontract.Point(1, 0); // On the unit circle
+        org.example.equalsgeneralcontract.Point po2 = new org.example.equalsgeneralcontract.Point(0, 1); // On the unit circle
+        org.example.equalsgeneralcontract.Point po3 = new org.example.equalsgeneralcontract.Point(-1, 0); // On the unit circle
+        org.example.equalsgeneralcontract.Point po4 = new org.example.equalsgeneralcontract.Point(0, -1); // On the unit circle
+        org.example.equalsgeneralcontract.Point po5 = new org.example.equalsgeneralcontract.Point(2, 0); // Not on the unit circle
+        assertTrue(org.example.equalsgeneralcontract.Point.onUnitCircle(po1));
+        assertTrue(org.example.equalsgeneralcontract.Point.onUnitCircle(po2));
+        assertTrue(org.example.equalsgeneralcontract.Point.onUnitCircle(po3));
+        assertTrue(org.example.equalsgeneralcontract.Point.onUnitCircle(po4));
+        assertFalse(org.example.equalsgeneralcontract.Point.onUnitCircle(po5));
     }
 
     // For any non-null reference value x, x.equals(x) must return true.
     @Test
     public void testReflexivity() {
-        Point p = new Point(1, 0);
-        Point pp = new Point(3, 0);
+        org.example.equalsgeneralcontract.Point p = new org.example.equalsgeneralcontract.Point(1, 0);
+        org.example.equalsgeneralcontract.Point pp = new org.example.equalsgeneralcontract.Point(3, 0);
         assertTrue("Reflexivity failed: a point should equal itself", p.equals(p));
         assertFalse("Reflexivity failed: a point should not equal a different point", p.equals(pp));
     }
@@ -69,7 +71,7 @@ public class PointTest {
     // For any non-null reference value x, x.equals(null) must return false.
     @Test
     public void testNullComparison() {
-        Point p = new Point(1, 0);
+        org.example.equalsgeneralcontract.Point p = new Point(1, 0);
         assertFalse("Null comparison failed", p.equals(null));
     }
 }

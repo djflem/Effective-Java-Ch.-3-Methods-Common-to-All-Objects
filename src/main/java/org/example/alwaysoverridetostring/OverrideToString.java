@@ -1,4 +1,4 @@
-package alwaysoverridetostring;
+package org.example.alwaysoverridetostring;
 
 // Providing a good toString implementation makes your class much more pleasant to use and makes systems using the class easier to debug.
 // When practical, the toString method should return ALL of the interesting information contained in the object.
