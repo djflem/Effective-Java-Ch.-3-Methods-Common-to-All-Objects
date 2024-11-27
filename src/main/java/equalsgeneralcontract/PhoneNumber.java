@@ -46,4 +46,18 @@ public class PhoneNumber {
         return pn.lineNum == lineNum && pn.prefix == prefix && pn.areaCode == areaCode; // #4
         // Primitives can use ==, float use Float.compare, double use Double.compare, array check each element, null use Objects.equals
     }
+
+    /**
+     * Returns the string representation of this phone number. The string consists of twelve characters whose format is
+     * "XXX-YYY-ZZZ", where XXX is the area code, YYY is the prefix, and ZZZZ is the line number. Each of the capital
+     * letters represents a single decimal digit.
+     *
+     * If any of the three parts of this phone number is too small to fill up its field, the field is padded with leading
+     * zeros. For example, if the value of the line number is 123, the last four characters of the string representation
+     * will be "0123".
+     */
+    @Override
+    public String toString() {
+        return String.format("%03d-%03d-%04d", areaCode, prefix, lineNum);
+    }
 }
