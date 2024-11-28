@@ -50,7 +50,26 @@ public class HashTable implements Cloneable {
             }
             return result;
         } catch (CloneNotSupportedException e) {
-            throw new AssertionError(); // Public clone methods should omit the throws clause.
+            // The clone method does not declare throws CloneNotSupportedException because this exception is handled internally.
+            // If the exception were ever thrown, it would be wrapped in an AssertionError, as this situation should not happen if the Cloneable contract is fulfilled.
+            throw new AssertionError();
         }
+    }
+
+    // If your class isn't implementing Cloneable, you're better off copying objects with a...
+    // 1. Copy constructor
+    public HashTable(HashTable original) {
+        this.buckets = new Entry[original.buckets.length];
+        for (int i = 0; i < original.buckets.length; i++) {
+            if (original.buckets[i] != null) {
+                this.buckets[i] = original.buckets[i].deepCopy();
+            }
+        }
+    }
+
+    // If your class isn't implementing Cloneable, you're better off copying objects with a...
+    // 2. Copy static factory method
+    public static HashTable copyOf(HashTable original) {
+        return new HashTable(original);
     }
 }

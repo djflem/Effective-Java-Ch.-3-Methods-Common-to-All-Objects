@@ -8,7 +8,7 @@ import java.util.EmptyStackException;
 // In effect, the clone method functions as a constructor; you must ensure that it does no harm to the original object and that it properly
 // establishes invariants on the clone.
 // The Cloneable architecture is incompatible with normal use of final fields referring to mutable objects.
-public class Stack {
+public class Stack implements Cloneable {
     private Object[] elements; // Arrays are the sole compelling use of the clone facility
     private int size = 0;
     private static final int DEFAULT_INITIAL_CAPACITY = 16;
@@ -50,5 +50,18 @@ public class Stack {
         } catch (CloneNotSupportedException e) {
             throw new AssertionError();
         }
+    }
+
+    // If your class isn't implementing Cloneable, you're better off copying objects with a...
+    // 1. Copy constructor
+    public Stack(Stack original) {
+        this.elements = Arrays.copyOf(original.elements, original.elements.length);
+        this.size = original.size;
+    }
+
+    // If your class isn't implementing Cloneable, you're better off copying objects with a...
+    // 2. Copy static factory method
+    public static Stack copyOf(Stack original) {
+        return new Stack(original);
     }
 }
