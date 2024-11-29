@@ -12,7 +12,7 @@ import java.util.Objects;
 // identity and a superclass has not already overridden equals. Generally the case for value classes.
 // Value class: A class that represents a value, such as Integer or String.
 // The equals' equivalence relation properties: reflexive, symmetric, transitive, consistent, non-null must return false
-public class CaseInsensitiveString {
+public class CaseInsensitiveString implements Comparable<CaseInsensitiveString> {
     /*
     // If you are extremely risk-averse, you can override the equals method to ensure that it isn't invoked accidentally.
     @Override
@@ -46,5 +46,10 @@ public class CaseInsensitiveString {
     @Override
     public boolean equals(Object o) {
         return o instanceof CaseInsensitiveString && ((CaseInsensitiveString) o).s.equalsIgnoreCase(s);
+    }
+
+    // Single-field Comparable with object reference field
+    public int compareTo(CaseInsensitiveString cis) {
+        return String.CASE_INSENSITIVE_ORDER.compare(s, cis.s);
     }
 }

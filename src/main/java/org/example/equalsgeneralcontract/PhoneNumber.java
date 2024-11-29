@@ -2,6 +2,9 @@ package org.example.equalsgeneralcontract;
 
 // Class with typical equals method
 
+import java.util.Comparator;
+import static java.util.Comparator.comparingInt;
+
 // Recipe for a high-quality equals method:
 // 1. Use the == operator to check if the argument is a reference to this object.
 // 2. Use the instanceof operator to check if the argument has the correct type.
@@ -56,6 +59,30 @@ public class PhoneNumber implements Cloneable {
         } catch (CloneNotSupportedException e) {
             throw new AssertionError(); // Can't happen
         }
+    }
+
+    /*
+    // Mulitple-field Comparable with primitive fields
+    public int compareTo(PhoneNumber pn) {
+        int result = Short.compare(areaCode, pn.areaCode);
+        if (result == 0) {
+            result = Short.compare(prefix, pn.prefix);
+            if (result == 0) {
+                result = Short.compare(lineNum, pn.lineNum);
+            }
+        }
+        return result;
+    }
+    */
+
+    // Comparable with comparator construction methods
+    private static final Comparator<PhoneNumber> COMPARATOR =
+            comparingInt((PhoneNumber pn) -> pn.areaCode)
+            .thenComparingInt(pn -> pn.prefix)
+            .thenComparingInt(pn -> pn.lineNum);
+
+    public int compareTo(PhoneNumber pn) {
+        return COMPARATOR.compare(this, pn);
     }
 
     /**

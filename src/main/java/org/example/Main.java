@@ -44,5 +44,23 @@ public class Main {
         System.out.println("Is the clone of phone number 1 equal to original phone number 1?: " + phoneNumber3.equals(phoneNumber1));
         System.out.println("Phone number 3 hash code (clone of phone number 1): " + phoneNumber3.hashCode());
         System.out.println("Phone number 3 toString: " + phoneNumber3.toString());
+
+        //IMPLEMENTING COMPARABLE
+        System.out.println();
+        System.out.println("IMPLEMENTING COMPARABLE");
+        System.out.println();
+        //
+
+        PhoneNumber numberToCompare1 = new PhoneNumber(212, 225, 8899);
+        PhoneNumber numberToCompare2 = new PhoneNumber(212, 225, 8899);
+        PhoneNumber numberToCompare3 = new PhoneNumber(212, 225, 9999);
+        System.out.println("Number 1 compared to 2 is: " + numberToCompare1.compareTo(numberToCompare2));
+        System.out.println("Number 2 compared to 3 is: " + numberToCompare2.compareTo(numberToCompare3));
+        System.out.println("Number 1 compared to 3 is: " + numberToCompare1.compareTo(numberToCompare3));
+        // A negative value if the first string is lexicographically less than the second.
+        // 0 if the two strings are considered equal (ignoring case).
+        // A positive value if the first string is lexicographically greater than the second.
+        CaseInsensitiveString cis2 = new CaseInsensitiveString("PoLiawdawsh");
+        System.out.println("cis compared to cis2 is: " + cis.compareTo(cis2));
     }
 }

@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ed39096-6b77-40da-aa64-cf89a5492e7a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/overridingclone/StackTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/implementingcomparable/Comparable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/overridingclone/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/overridingclone/HashTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/overridingclone/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/overridingclone/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/equalsgeneralcontract/CaseInsensitiveString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/equalsgeneralcontract/CaseInsensitiveString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/equalsgeneralcontract/PhoneNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/equalsgeneralcontract/PhoneNumber.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,31 +39,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.PhoneNumberTest.executor": "Run",
-    "JUnit.PointTest.executor": "Run",
-    "JUnit.PointTest.testOnUnitCircle.executor": "Run",
-    "JUnit.StackTest.executor": "Run",
-    "JUnit.StackTest.testCloneMethod.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/deadr/Documents/GitHub/Effective Java Ch. 3 Methods Common to All Objects/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PhoneNumberTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PointTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PointTest.testOnUnitCircle.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StackTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StackTest.testCloneMethod.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/deadr/Documents/GitHub/Effective Java Ch. 3 Methods Common to All Objects/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.StackTest">
+}</component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="maven" />
@@ -140,8 +140,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StackTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.StackTest" />
         <item itemvalue="JUnit.PhoneNumberTest" />
         <item itemvalue="JUnit.PointTest" />
         <item itemvalue="JUnit.PointTest.testOnUnitCircle" />
@@ -175,6 +175,7 @@
       <workItem from="1732712091096" duration="3793000" />
       <workItem from="1732799849087" duration="702000" />
       <workItem from="1732810100604" duration="5166000" />
+      <workItem from="1732865983220" duration="3801000" />
     </task>
     <servers />
   </component>
